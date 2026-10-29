@@ -35,7 +35,11 @@ Then open the printed localhost URL.
 4. Add an entry to the `design` list in `sites.json` (name, url, image, accent, tagline, desc).
 
 For a live site that isn't a design direction, add an entry to `live` instead
-(name, url, desc, repo, and access: `public`, `partly`, `login` or `offline`).
+(name, url, image, desc, repo, and access: `public`, `partly`, `login` or `offline`).
+Pages made in Slack go in `made_in_slack` (name, url, image, group).
+
+Every entry has a screenshot: live sites in `assets/screenshots/live/`, Slack pages in
+`assets/screenshots/slack/` (named after the page ID). They're 1440×900 captures resized to 720 wide.
 The counters at the top update themselves.
 
 ## Note on `kog-studio-1` and `kog-studio-2` artwork

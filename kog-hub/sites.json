@@ -4,6 +4,7 @@
   {
    "name": "Kingdom of God",
    "url": "https://www.kingdomofgod.co.uk",
+   "image": "assets/screenshots/live/kingdom-of-god.jpg",
    "desc": "The main KOG site.",
    "repo": "the-kingdom-of-god/kingdomofgod.co.uk",
    "access": "public"
@@ -11,6 +12,7 @@
   {
    "name": "Welcome",
    "url": "https://www.kingdomofgod.co.uk/welcome",
+   "image": "assets/screenshots/live/welcome.jpg",
    "desc": "A gentle introduction: what the Kingdom is, the parables, living it and entering it.",
    "repo": "the-kingdom-of-god/kingdomofgod.co.uk",
    "access": "public"
@@ -18,6 +20,7 @@
   {
    "name": "Reformation Party",
    "url": "https://reformationparty.org",
+   "image": "assets/screenshots/live/reformation-party.jpg",
    "desc": "A Kingdom of God vision for change: principles, reflections and how to get involved.",
    "repo": "the-kingdom-of-god/reformation-party",
    "access": "public"
@@ -25,6 +28,7 @@
   {
    "name": "Reformation Parties",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/6ad259afcdc24bbf9130",
+   "image": "assets/screenshots/live/reformation-parties.jpg",
    "desc": "Light a candle on 31 October: host or join a Reformation Party night.",
    "repo": "the-kingdom-of-god/slack-agents",
    "access": "public"
@@ -32,6 +36,7 @@
   {
    "name": "Slopcore",
    "url": "https://slopcore-one.vercel.app",
+   "image": "assets/screenshots/live/slopcore.jpg",
    "desc": "The series, in order, with a trailer and a new-episode bell.",
    "repo": "the-kingdom-of-god/slopcore",
    "access": "public"
@@ -39,6 +44,7 @@
   {
    "name": "Genesis: The Light Within",
    "url": "https://genesis-three-umber.vercel.app",
+   "image": "assets/screenshots/live/genesis-the-light-within.jpg",
    "desc": "Not the end of the world. The beginning of one.",
    "repo": "the-kingdom-of-god/genesis-the-light-within",
    "access": "public"
@@ -46,6 +52,7 @@
   {
    "name": "Genesis",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/genesis",
+   "image": "assets/screenshots/live/genesis.jpg",
    "desc": "The Genesis app: #chat and #agi-demo, open to visitors with full features behind the team login.",
    "repo": "the-kingdom-of-god/slack-agents",
    "access": "partly"
@@ -53,6 +60,7 @@
   {
    "name": "Slack Explorer",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/explorer",
+   "image": "assets/screenshots/live/slack-explorer.jpg",
    "desc": "Read the KOG Slack from anywhere, with unread counts and push notifications.",
    "repo": "the-kingdom-of-god/slack-agents",
    "access": "login"
@@ -60,6 +68,7 @@
   {
    "name": "Gimme the Loot",
    "url": "https://kog-fundraising-site-biggie.vercel.app",
+   "image": "assets/screenshots/live/gimme-the-loot.jpg",
    "desc": "A faith-rooted, donation-only fundraising campaign.",
    "repo": null,
    "access": "public"
@@ -67,6 +76,7 @@
   {
    "name": "Cabinet Ledger",
    "url": "https://kingdom-cabinet-ledger.surge.sh",
+   "image": "assets/screenshots/live/cabinet-ledger.jpg",
    "desc": "An animated replay of real #kingdom-cabinet activity, with all 11 AI advisors.",
    "repo": null,
    "access": "public"
@@ -74,6 +84,7 @@
   {
    "name": "Jesus Christ: The Light of the World",
    "url": "https://jesus-christ-site.pages.dev",
+   "image": "assets/screenshots/live/jesus-christ-the-light-of-the-world.jpg",
    "desc": "The Good News, His own words, a place to pray and a place to praise.",
    "repo": null,
    "access": "public"
@@ -81,6 +92,7 @@
   {
    "name": "KOG Clips",
    "url": "https://clips.gambles-henry.workers.dev/demo",
+   "image": "assets/screenshots/live/kog-clips.jpg",
    "desc": "A demo of the KOG clip player.",
    "repo": null,
    "access": "public"
@@ -88,6 +100,7 @@
   {
    "name": "Website Wiki",
    "url": "https://www.kogwebsite.wiki",
+   "image": "assets/screenshots/live/website-wiki.jpg",
    "desc": "This page: every KOG site in one place.",
    "repo": "the-kingdom-of-god/website-wiki",
    "access": "public"
@@ -95,6 +108,7 @@
   {
    "name": "Kingdom Registry",
    "url": null,
+   "image": "assets/screenshots/live/kingdom-registry.jpg",
    "desc": "A searchable directory so churches, charities and community groups can find each other.",
    "repo": "the-kingdom-of-god/kingdom-registry",
    "access": "offline"
@@ -102,6 +116,7 @@
   {
    "name": "Welcome site & IRC",
    "url": null,
+   "image": "assets/screenshots/live/welcome-site-irc.jpg",
    "desc": "An anonymous welcome page with a live IRC-style chat.",
    "repo": "the-kingdom-of-god/welcome-site",
    "access": "offline"
@@ -109,6 +124,7 @@
   {
    "name": "Jung's Library",
    "url": null,
+   "image": "assets/screenshots/live/jung-s-library.jpg",
    "desc": "A dark-mode search archive over the C.G. Jung Foundation's alchemy collection.",
    "repo": null,
    "access": "offline"
@@ -184,446 +200,535 @@
   {
    "name": "BaaS Partner Decision Matrix",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/454007047df849ed8237",
+   "image": "assets/screenshots/slack/454007047df849ed8237.jpg",
    "group": "PubBank"
   },
   {
    "name": "Bradford PubBank Launch",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/36c672b2079148cea6b3",
+   "image": "assets/screenshots/slack/36c672b2079148cea6b3.jpg",
    "group": "PubBank"
   },
   {
    "name": "Call Sabrina – Free Financial Advice",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/db3bdc3787a0420daf59",
+   "image": "assets/screenshots/slack/db3bdc3787a0420daf59.jpg",
    "group": "PubBank"
   },
   {
    "name": "Durham Beta — PubBank",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/46177c99033c413aa3a3",
+   "image": "assets/screenshots/slack/46177c99033c413aa3a3.jpg",
    "group": "PubBank"
   },
   {
    "name": "First 100: Durham Launch Tracker",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/2d2a5951e7594270bf08",
+   "image": "assets/screenshots/slack/2d2a5951e7594270bf08.jpg",
    "group": "PubBank"
   },
   {
    "name": "Gift Loan — PubBank Invest",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/50595b1abb3a4f92aa2a",
+   "image": "assets/screenshots/slack/50595b1abb3a4f92aa2a.jpg",
    "group": "PubBank"
   },
   {
    "name": "I'm In. PubBank is Live.",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/65c0c90db9f647eea551",
+   "image": "assets/screenshots/slack/65c0c90db9f647eea551.jpg",
    "group": "PubBank"
   },
   {
    "name": "Jubilee — Banking Built for Forgiveness",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/4ae56e4a6d044c28bc34",
+   "image": "assets/screenshots/slack/4ae56e4a6d044c28bc34.jpg",
    "group": "PubBank"
   },
   {
    "name": "Meet Your Neighbour — PubBank",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/a14d9d5369ce481fbbe2",
+   "image": "assets/screenshots/slack/a14d9d5369ce481fbbe2.jpg",
    "group": "PubBank"
   },
   {
    "name": "Neighbour Stories Widget",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/50359f8a4b9244019925",
+   "image": "assets/screenshots/slack/50359f8a4b9244019925.jpg",
    "group": "PubBank"
   },
   {
    "name": "Neighbours Backing Neighbours",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c23093e11c234a1bbc79",
+   "image": "assets/screenshots/slack/c23093e11c234a1bbc79.jpg",
    "group": "PubBank"
   },
   {
    "name": "No Gotchas",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/f1535956af8b4394bfbb",
+   "image": "assets/screenshots/slack/f1535956af8b4394bfbb.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank - Banking Built for Humans",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/14a47b217bbe4befa775",
+   "image": "assets/screenshots/slack/14a47b217bbe4befa775.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Community Celebration Week",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/b353bb738bb541ad9476",
+   "image": "assets/screenshots/slack/b353bb738bb541ad9476.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Compliance Precheck",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/3e185abbf0db40c7b9af",
+   "image": "assets/screenshots/slack/3e185abbf0db40c7b9af.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Covenant Audit Dashboard",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c4a3be8ab3c24ea99a1a",
+   "image": "assets/screenshots/slack/c4a3be8ab3c24ea99a1a.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Covenant Card",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/d3eeed681279438b86b1",
+   "image": "assets/screenshots/slack/d3eeed681279438b86b1.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Covenant Charter",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/f5a7e5454e054f48b768",
+   "image": "assets/screenshots/slack/f5a7e5454e054f48b768.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Covenant Dashboard",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c19a5c61e29f4515a772",
+   "image": "assets/screenshots/slack/c19a5c61e29f4515a772.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Covenant Ledger",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/e9b8ec65b75e40c282c6",
+   "image": "assets/screenshots/slack/e9b8ec65b75e40c282c6.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Covenant Verification",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/598f501142ee4f1a994a",
+   "image": "assets/screenshots/slack/598f501142ee4f1a994a.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Faith Leader Partnership",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/456832b5789a4282a93f",
+   "image": "assets/screenshots/slack/456832b5789a4282a93f.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Faith Leader Pilot",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/7f4cdee29e944e38bdf6",
+   "image": "assets/screenshots/slack/7f4cdee29e944e38bdf6.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank First-Visit Event Capture",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/233f91717a174c78929e",
+   "image": "assets/screenshots/slack/233f91717a174c78929e.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank for Community Leaders",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/e019e855115d4c4d82a8",
+   "image": "assets/screenshots/slack/e019e855115d4c4d82a8.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Gift Loan Covenant Card",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/935ff0b3317442dc80a6",
+   "image": "assets/screenshots/slack/935ff0b3317442dc80a6.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Invest — Loan Tiers",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/e4e3928a2c104799b0f4",
+   "image": "assets/screenshots/slack/e4e3928a2c104799b0f4.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Jubilee Fund",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/34b35044ebed4079af3b",
+   "image": "assets/screenshots/slack/34b35044ebed4079af3b.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Jubilee Notification",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/4a6f964319084446b602",
+   "image": "assets/screenshots/slack/4a6f964319084446b602.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank KYC/AML Launch Readiness",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/0ddcb68caee84b63adef",
+   "image": "assets/screenshots/slack/0ddcb68caee84b63adef.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Launch Funnel",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/476c3926c01947ff9171",
+   "image": "assets/screenshots/slack/476c3926c01947ff9171.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Launch Stories",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/cce293b2eec94c0d9d82",
+   "image": "assets/screenshots/slack/cce293b2eec94c0d9d82.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Launch Town Economics",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/48f2e96507e54e1e9b0d",
+   "image": "assets/screenshots/slack/48f2e96507e54e1e9b0d.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Launch Town Tracker",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/b59b7f7b025b4587a172",
+   "image": "assets/screenshots/slack/b59b7f7b025b4587a172.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Launch Towns",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/9890e5fbb2cd467c8661",
+   "image": "assets/screenshots/slack/9890e5fbb2cd467c8661.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Momentum",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/16a5d42396c6437b9030",
+   "image": "assets/screenshots/slack/16a5d42396c6437b9030.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank MVP Launch Readiness",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/7f72122a9f124cc38d10",
+   "image": "assets/screenshots/slack/7f72122a9f124cc38d10.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Onboarding Covenant",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/cc09ba21e1704b91a279",
+   "image": "assets/screenshots/slack/cc09ba21e1704b91a279.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Regulatory Roadmap",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/adfb48b2f8554644943d",
+   "image": "assets/screenshots/slack/adfb48b2f8554644943d.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank Savings Calculator",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/9328e51cd1c24eeab565",
+   "image": "assets/screenshots/slack/9328e51cd1c24eeab565.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank — Banking Built for Humans",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/1b88a3e988514f039132",
+   "image": "assets/screenshots/slack/1b88a3e988514f039132.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank — Banking Built for Humans",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/a88c6e437f8748339448",
+   "image": "assets/screenshots/slack/a88c6e437f8748339448.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank — Banking Built for Humans",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/be039333d73840a897fa",
+   "image": "assets/screenshots/slack/be039333d73840a897fa.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank — Banking Built for Humans",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c3330d288c9d402eab69",
+   "image": "assets/screenshots/slack/c3330d288c9d402eab69.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank — Banking Built for Humans",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/cfce215d9e99460fa02a",
+   "image": "assets/screenshots/slack/cfce215d9e99460fa02a.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank — First Look",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c8e7e891fa6d42f48550",
+   "image": "assets/screenshots/slack/c8e7e891fa6d42f48550.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank — Sabrina's Neighbour",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/16e2d606cd64451d9fa8",
+   "image": "assets/screenshots/slack/16e2d606cd64451d9fa8.jpg",
    "group": "PubBank"
   },
   {
    "name": "PubBank: Where Your Money Goes",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/71a071dda55242e18118",
+   "image": "assets/screenshots/slack/71a071dda55242e18118.jpg",
    "group": "PubBank"
   },
   {
    "name": "Real Cost of Lending — PubBank",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/3610e41b92a04324a9de",
+   "image": "assets/screenshots/slack/3610e41b92a04324a9de.jpg",
    "group": "PubBank"
   },
   {
    "name": "Sabrina Covenant Audit",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/4502a0b9455f406fa957",
+   "image": "assets/screenshots/slack/4502a0b9455f406fa957.jpg",
    "group": "PubBank"
   },
   {
    "name": "Sabrina Covenant Enforcer",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/0588e751699e411a9122",
+   "image": "assets/screenshots/slack/0588e751699e411a9122.jpg",
    "group": "PubBank"
   },
   {
    "name": "Sabrina — Financial Companion",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/61395daea1f6421ea955",
+   "image": "assets/screenshots/slack/61395daea1f6421ea955.jpg",
    "group": "PubBank"
   },
   {
    "name": "Sabrina — First Message",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/595ece02fe2a480ba4b0",
+   "image": "assets/screenshots/slack/595ece02fe2a480ba4b0.jpg",
    "group": "PubBank"
   },
   {
    "name": "Sabrina's Covenant",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/d109722e9d974907b9f1",
+   "image": "assets/screenshots/slack/d109722e9d974907b9f1.jpg",
    "group": "PubBank"
   },
   {
    "name": "Sabrina's Covenant — Decision Log",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/6ae2477db23e40fb833b",
+   "image": "assets/screenshots/slack/6ae2477db23e40fb833b.jpg",
    "group": "PubBank"
   },
   {
    "name": "Share Your Story — PubBank",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/748f40c6154249238de3",
+   "image": "assets/screenshots/slack/748f40c6154249238de3.jpg",
    "group": "PubBank"
   },
   {
    "name": "Share Your Story — PubBank",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/7e283addd0b64bb38a5c",
+   "image": "assets/screenshots/slack/7e283addd0b64bb38a5c.jpg",
    "group": "PubBank"
   },
   {
    "name": "The PubBank Covenant",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/6c00c7569b1b4dd5ad92",
+   "image": "assets/screenshots/slack/6c00c7569b1b4dd5ad92.jpg",
    "group": "PubBank"
   },
   {
    "name": "Your Story, Your Choice",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/602068615b3b46478b35",
+   "image": "assets/screenshots/slack/602068615b3b46478b35.jpg",
    "group": "PubBank"
   },
   {
    "name": "Kingdom of God Cabinet",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/4da19f8e2c054bf5b768",
+   "image": "assets/screenshots/slack/4da19f8e2c054bf5b768.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/12b5e3b60abb462eae03",
+   "image": "assets/screenshots/slack/12b5e3b60abb462eae03.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/2ea5c1b97e3147a88675",
+   "image": "assets/screenshots/slack/2ea5c1b97e3147a88675.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/406306546f5d4d35939f",
+   "image": "assets/screenshots/slack/406306546f5d4d35939f.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/83c756a83be44e0b8acf",
+   "image": "assets/screenshots/slack/83c756a83be44e0b8acf.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/96eedf529ca647fc932e",
+   "image": "assets/screenshots/slack/96eedf529ca647fc932e.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox - Agentic AI Leadership",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/d011761bf57d45f8a499",
+   "image": "assets/screenshots/slack/d011761bf57d45f8a499.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox - Cabinet",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/8b3ab3e1fc374cf5890e",
+   "image": "assets/screenshots/slack/8b3ab3e1fc374cf5890e.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox — Cabinet",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/0e265ce2f04b4b36bc46",
+   "image": "assets/screenshots/slack/0e265ce2f04b4b36bc46.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox — Cabinet of Counsel",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c0b134f5eb6d4b408fe2",
+   "image": "assets/screenshots/slack/c0b134f5eb6d4b408fe2.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Kingdom of God Sandbox: Dev Environment & Infrastructure",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/8278d080a6884489b1b3",
+   "image": "assets/screenshots/slack/8278d080a6884489b1b3.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "Welcome to Kingdom of God Sandbox",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/3ce7b65b147a4e9ba69c",
+   "image": "assets/screenshots/slack/3ce7b65b147a4e9ba69c.jpg",
    "group": "Sandbox & Cabinet"
   },
   {
    "name": "ChurchOS",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/5dae1e41174a4c50a867",
+   "image": "assets/screenshots/slack/5dae1e41174a4c50a867.jpg",
    "group": "Church & community"
   },
   {
    "name": "Discernment: A Facilitation Framework",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/3a6e810234424b6e800e",
+   "image": "assets/screenshots/slack/3a6e810234424b6e800e.jpg",
    "group": "Church & community"
   },
   {
    "name": "Kingdom Discernment",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/db3889adb3cc41c6b14b",
+   "image": "assets/screenshots/slack/db3889adb3cc41c6b14b.jpg",
    "group": "Church & community"
   },
   {
    "name": "Kingdom Mapper",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/23e36e63bef84032a0c4",
+   "image": "assets/screenshots/slack/23e36e63bef84032a0c4.jpg",
    "group": "Church & community"
   },
   {
    "name": "Sunday Assembly Kit",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/bf040d2912c4475e903e",
+   "image": "assets/screenshots/slack/bf040d2912c4475e903e.jpg",
    "group": "Church & community"
   },
   {
    "name": "Artificial Intelligence and Human Dignity: A Theological Treatise",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/d1416f82608f41df8e76",
+   "image": "assets/screenshots/slack/d1416f82608f41df8e76.jpg",
    "group": "Writing & ideas"
   },
   {
    "name": "Cosmic Illumination: A Christian & Abrahamic Perspective",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/6f604070447543eb86e2",
+   "image": "assets/screenshots/slack/6f604070447543eb86e2.jpg",
    "group": "Writing & ideas"
   },
   {
    "name": "Kingdom of God",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/298f6946af5443c9bb2c",
+   "image": "assets/screenshots/slack/298f6946af5443c9bb2c.jpg",
    "group": "Writing & ideas"
   },
   {
    "name": "Kingdom of God",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c41fc7b6a3bd4fdaa4a5",
+   "image": "assets/screenshots/slack/c41fc7b6a3bd4fdaa4a5.jpg",
    "group": "Writing & ideas"
   },
   {
    "name": "Kingdom of God: A Creator's Manifesto",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/a170381a3a6741168f91",
+   "image": "assets/screenshots/slack/a170381a3a6741168f91.jpg",
    "group": "Writing & ideas"
   },
   {
    "name": "The Philosopher's Stone",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/84e836a037e14e5d8633",
+   "image": "assets/screenshots/slack/84e836a037e14e5d8633.jpg",
    "group": "Writing & ideas"
   },
   {
    "name": "Reformation Party – Join Us",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/eebff265efc0443ea3e0",
+   "image": "assets/screenshots/slack/eebff265efc0443ea3e0.jpg",
    "group": "Reformation"
   },
   {
    "name": "cairn — anonymous paste",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/7351b234dffe46cbb511",
+   "image": "assets/screenshots/slack/7351b234dffe46cbb511.jpg",
    "group": "Other experiments"
   },
   {
    "name": "Kingdom of God Slack Explorer",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/0652c298b8554c40abdb",
+   "image": "assets/screenshots/slack/0652c298b8554c40abdb.jpg",
    "group": "Other experiments"
   },
   {
    "name": "Kingdom of God Slack Explorer",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/f7b971ff784a44caa22d",
+   "image": "assets/screenshots/slack/f7b971ff784a44caa22d.jpg",
    "group": "Other experiments"
   },
   {
    "name": "Kingdom Slack Explorer",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/546f2f25b2d9459daf97",
+   "image": "assets/screenshots/slack/546f2f25b2d9459daf97.jpg",
    "group": "Other experiments"
   },
   {
    "name": "Team Profile Pictures - PR Example",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/c64ee2b6509d4388b788",
+   "image": "assets/screenshots/slack/c64ee2b6509d4388b788.jpg",
    "group": "Other experiments"
   },
   {
    "name": "The Kingdom of God",
    "url": "https://kingdom-of-god-agents.gambles-henry.workers.dev/sites/052146c601dc423d8dea",
+   "image": "assets/screenshots/slack/052146c601dc423d8dea.jpg",
    "group": "Other experiments"
   }
  ]
