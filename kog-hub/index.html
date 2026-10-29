@@ -307,6 +307,21 @@
   .list a span{ padding:0.6rem 0.75rem 0.7rem; line-height:1.35; }
   .list a:hover{ color:var(--accent); border-color:var(--accent); }
   @media (max-width:560px){ .list{ grid-template-columns:1fr 1fr; gap:0.6rem; } .list a{ font-size:0.78rem; } }
+  .tools select{ font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; background:var(--bg-raised); color:var(--ink); border:1px solid var(--card-border); border-radius:100px; padding:0.6em 1.1em; cursor:pointer; margin-left:auto; }
+  .tools select:focus{ outline:none; border-color:var(--accent); }
+  .when{ font-family:var(--mono); font-size:0.64rem; letter-spacing:0.06em; color:var(--ink-faint); }
+  .kind{ font-family:var(--mono); font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); }
+
+  .timeline{ position:relative; padding-left:1.6rem; border-left:1px solid var(--card-border); margin-left:0.3rem; }
+  .month{ position:relative; margin:0 0 2.6rem; }
+  .month::before{ content:""; position:absolute; left:calc(-1.6rem - 5px); top:0.55rem; width:9px; height:9px; border-radius:50%; background:var(--accent); box-shadow:0 0 10px var(--accent); }
+  .month h3{ font-family:var(--serif-display); font-weight:400; font-size:1.9rem; letter-spacing:0.01em; text-transform:uppercase; margin:0 0 1rem; }
+  .month h3 span{ font-family:var(--mono); font-size:0.72rem; letter-spacing:0.1em; color:var(--ink-faint); margin-left:0.6em; }
+  .month.undated::before{ background:var(--ink-faint); box-shadow:none; }
+  .flat{ display:grid; grid-template-columns:repeat(auto-fill, minmax(min(220px,100%),1fr)); gap:0.9rem; }
+  .flat .tile-body{ padding:0.8rem 0.9rem 0.9rem; gap:0.35rem; }
+  .flat .tile h4{ font-size:0.92rem; }
+
   .empty{ color:var(--ink-faint); font-family:var(--mono); font-size:0.8rem; }
   [hidden]{ display:none !important; }
 
@@ -336,7 +351,17 @@
     <button class="chip" data-show="design" aria-pressed="false">Design</button>
     <button class="chip" data-show="manus" aria-pressed="false">Manus</button>
     <button class="chip" data-show="made" aria-pressed="false">Made in Slack</button>
+    <select id="order" aria-label="Order sites">
+      <option value="sections">By section</option>
+      <option value="newest">Timeline · newest</option>
+      <option value="oldest">Timeline · oldest</option>
+      <option value="az">A–Z</option>
+    </select>
   </div>
+
+  <section class="block" id="ordered" hidden>
+    <div id="ordered-list"></div>
+  </section>
 
   <section class="block" id="live">
     <div class="block-head"><h3>Live sites</h3><p>The real sites, with who can see them and where the code lives.</p></div>
@@ -474,10 +499,90 @@
     ]);
   }
 
+  var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var KIND = { live: "Live site", design: "Design", manus: "Manus", made: "Made in Slack" };
+  function when(s) {
+    if (!s.date) return "Date unknown";
+    var p = s.date.split("-");
+    return (s.date_by ? "By " : "") + (+p[2]) + " " + MONTHS[+p[1] - 1] + " " + p[0];
+  }
+
+  // Every entry in one list, for the timeline and A–Z views.
+  var all = [];
+  function flatTile(s) {
+    var t = link(s.url, "tile" + (s.url ? "" : " offline"), [
+      shot(s),
+      el("div", { class: "tile-body" }, [
+        el("span", { class: "kind", text: KIND[s.kind] + (s.group ? " · " + s.group : "") }),
+        el("h4", { text: s.name }),
+        el("span", { class: "when", text: when(s) })
+      ])
+    ]);
+    t.dataset.search = [s.name, s.desc, s.url, s.repo, s.group, s.tagline, KIND[s.kind]].join(" ").toLowerCase();
+    t.dataset.kind = s.kind;
+    return t;
+  }
+
+  function renderOrdered(order) {
+    var wrap = document.getElementById("ordered-list");
+    wrap.textContent = "";
+    var list = all.slice();
+    if (order === "az") {
+      list.sort(function (a, b) { return a.name.localeCompare(b.name); });
+      var g = el("div", { class: "flat" });
+      list.forEach(function (s) { g.appendChild(flatTile(s)); });
+      wrap.appendChild(g);
+      return;
+    }
+    var dir = order === "newest" ? -1 : 1;
+    var dated = list.filter(function (s) { return s.date; });
+    dated.sort(function (a, b) { return (a.date < b.date ? -1 : a.date > b.date ? 1 : 0) * dir || a.name.localeCompare(b.name); });
+    var months = [], byMonth = {};
+    dated.forEach(function (s) {
+      var m = s.date.slice(0, 7);
+      if (!byMonth[m]) { byMonth[m] = []; months.push(m); }
+      byMonth[m].push(s);
+    });
+    var tl = el("div", { class: "timeline" });
+    function month(label, items, cls) {
+      var g = el("div", { class: "flat" });
+      items.forEach(function (s) { g.appendChild(flatTile(s)); });
+      tl.appendChild(el("div", { class: "month" + (cls ? " " + cls : "") }, [
+        el("h3", {}, [document.createTextNode(label), el("span", { text: items.length + (items.length === 1 ? " site" : " sites") })]),
+        g
+      ]));
+    }
+    months.forEach(function (m) {
+      var p = m.split("-");
+      month(MONTHS[+p[1] - 1] + " " + p[0], byMonth[m]);
+    });
+    var undated = list.filter(function (s) { return !s.date; });
+    undated.sort(function (a, b) { return a.name.localeCompare(b.name); });
+    if (undated.length) month("Date unknown", undated, "undated");
+    wrap.appendChild(tl);
+  }
+
   var show = "all";
   function apply() {
     var q = document.getElementById("q").value.trim().toLowerCase();
+    var order = document.getElementById("order").value;
     var any = false;
+    var ordered = document.getElementById("ordered");
+    ordered.hidden = order === "sections";
+    if (order !== "sections") {
+      ["live", "design", "manus", "made"].forEach(function (id) { document.getElementById(id).hidden = true; });
+      ordered.querySelectorAll("[data-search]").forEach(function (n) {
+        var ok = (show === "all" || show === n.dataset.kind) && (!q || n.dataset.search.indexOf(q) !== -1);
+        n.hidden = !ok;
+        if (ok) any = true;
+      });
+      ordered.querySelectorAll(".month").forEach(function (m) {
+        m.hidden = !m.querySelector(".tile:not([hidden])");
+      });
+      ordered.hidden = !any;
+      document.getElementById("none").hidden = any;
+      return;
+    }
     ["live", "design", "manus", "made"].forEach(function (id) {
       var sec = document.getElementById(id);
       var hits = 0;
@@ -503,6 +608,9 @@
     var mg = document.getElementById("manus-grid");
     d.manus.forEach(function (s) { mg.appendChild(manusTile(s)); });
     madeGroups(d.made_in_slack);
+    [["live", d.live], ["design", d.design], ["manus", d.manus], ["made", d.made_in_slack]].forEach(function (p) {
+      p[1].forEach(function (s) { all.push(Object.assign({ kind: p[0] }, s)); });
+    });
 
     var online = d.live.filter(function (s) { return s.url; }).length;
     var st = document.getElementById("stats");
@@ -514,6 +622,10 @@
   });
 
   document.getElementById("q").addEventListener("input", apply);
+  document.getElementById("order").addEventListener("change", function () {
+    if (this.value !== "sections") renderOrdered(this.value);
+    apply();
+  });
   document.querySelectorAll(".chip").forEach(function (b) {
     b.addEventListener("click", function () {
       show = b.dataset.show;
