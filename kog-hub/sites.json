@@ -106,6 +106,41 @@
    "access": "public"
   },
   {
+   "name": "Biscuits.icu",
+   "url": "https://www.biscuits.icu/",
+   "image": "assets/screenshots/live/biscuits-icu.jpg",
+   "desc": "A small land of biscuits, where tea is sacred.",
+   "access": "public"
+  },
+  {
+   "name": "The Kingdom of Biscuits",
+   "url": "https://kog-kingdom-of-biscuits.surge.sh/",
+   "image": "assets/screenshots/live/kog-kingdom-of-biscuits.jpg",
+   "desc": "A Biscuits.icu draft with the Orders of the Kingdom and a biscuit blessing oracle.",
+   "access": "public"
+  },
+  {
+   "name": "The Biscuitpuff Kingdom",
+   "url": "https://kog-biscuitpuff.surge.sh/",
+   "image": "assets/screenshots/live/kog-biscuitpuff.jpg",
+   "desc": "A Powerpuff-style Biscuits.icu draft: Blossom, Bubbly and Bold Biscuit.",
+   "access": "public"
+  },
+  {
+   "name": "Tara Terminal",
+   "url": "https://kog-tara-terminal.surge.sh/",
+   "image": "assets/screenshots/live/kog-tara-terminal.jpg",
+   "desc": "A pretend iTerm2 in the browser, with an encrypted secrets.txt to find.",
+   "access": "public"
+  },
+  {
+   "name": "greenice.uk",
+   "url": "https://kog-greenice.surge.sh/",
+   "image": "assets/screenshots/live/kog-greenice.jpg",
+   "desc": "Follow the yellow brick road to the emerald city, then Genesis and the first clue.",
+   "access": "public"
+  },
+  {
    "name": "Kingdom Registry",
    "url": null,
    "image": "assets/screenshots/live/kingdom-registry.jpg",
