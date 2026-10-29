@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>KOG — Site Index</title>
-<meta name="description" content="An index of every Kingdom of God (KOG) site design — click through to explore each one." />
+<meta name="description" content="Every Kingdom of God (KOG) site in one place: live sites, design directions and pages made by the team." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -272,8 +272,42 @@
   }
   footer strong{ color:var(--ink-dim); }
 
+  section.block{ margin:0 0 4.5rem; }
+  .block-head{ display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin:0 0 1.4rem; padding-bottom:0.8rem; border-bottom:1px solid var(--card-border); }
+  .block-head h3{ font-family:var(--serif-display); font-weight:400; font-size:2.2rem; letter-spacing:0.01em; margin:0; text-transform:uppercase; }
+  .block-head p{ margin:0; color:var(--ink-faint); font-size:0.88rem; max-width:60ch; }
+
+  .tools{ display:flex; gap:0.8rem; flex-wrap:wrap; margin:0 0 3rem; position:sticky; top:0; z-index:5; padding:0.9rem 0; background:linear-gradient(var(--bg) 80%, transparent); }
+  .tools input{ flex:1 1 100%; min-width:0; background:var(--bg-raised); border:1px solid var(--card-border); border-radius:100px; color:var(--ink); font:inherit; font-size:0.95rem; padding:0.7em 1.2em; }
+  .tools input:focus{ outline:none; border-color:var(--accent); }
+  .chip{ font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; background:none; color:var(--ink-dim); border:1px solid var(--card-border); border-radius:100px; padding:0.6em 1.1em; cursor:pointer; }
+  .chip[aria-pressed="true"]{ color:var(--bg); background:var(--accent); border-color:var(--accent); }
+
+  .live{ display:grid; grid-template-columns:repeat(auto-fill, minmax(min(280px,100%),1fr)); gap:1rem; }
+  .tile{ display:flex; flex-direction:column; gap:0.55rem; background:var(--bg-raised); border:1px solid var(--card-border); border-radius:12px; padding:1.2rem 1.3rem 1.1rem; text-decoration:none; transition:border-color 200ms ease, transform 200ms ease; }
+  a.tile:hover{ border-color:var(--accent); transform:translateY(-2px); }
+  .tile.offline{ opacity:0.62; }
+  .tile h4{ margin:0; font-size:1.05rem; font-weight:600; }
+  .tile p{ margin:0; color:var(--ink-dim); font-size:0.88rem; line-height:1.5; }
+  .tile .meta{ overflow-wrap:anywhere; margin-top:auto; padding-top:0.5rem; display:flex; justify-content:space-between; gap:0.6rem; flex-wrap:wrap; font-family:var(--mono); font-size:0.66rem; color:var(--ink-faint); }
+  .badge{ font-family:var(--mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.2em 0.6em; border-radius:100px; border:1px solid currentColor; align-self:flex-start; }
+  .badge.public{ color:var(--accent); }
+  .badge.partly{ color:#7cc8ff; }
+  .badge.login{ color:#ffb35c; }
+  .badge.offline{ color:var(--ink-faint); }
+
+  .group{ margin:0 0 2.2rem; }
+  .group h5{ font-family:var(--mono); font-weight:500; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-dim); margin:0 0 0.8rem; }
+  .group h5 span{ color:var(--ink-faint); }
+  .list{ list-style:none; margin:0; padding:0; columns:3 260px; column-gap:2rem; }
+  .list li{ break-inside:avoid; border-bottom:1px solid var(--card-border); }
+  .list a{ display:block; padding:0.55rem 0; text-decoration:none; color:var(--ink-dim); font-size:0.9rem; }
+  .list a:hover{ color:var(--accent); }
+  .empty{ color:var(--ink-faint); font-family:var(--mono); font-size:0.8rem; }
+  [hidden]{ display:none !important; }
+
   @media (prefers-reduced-motion: reduce){
-    .card, .thumb-wrap img, .visit .arrow{ transition:none; }
+    .card, .thumb-wrap img, .visit .arrow, .tile{ transition:none; }
   }
 </style>
 </head>
@@ -281,156 +315,179 @@
 <div class="noise" aria-hidden="true"></div>
 
 <header class="hero">
-  <div class="eyebrow">Kingdom of God — Design Studio</div>
+  <div class="eyebrow">Kingdom of God — Website Wiki</div>
   <h1>Every KOG site,<br/>in one place.</h1>
   <p class="lede">
-    Each project below is a full, independent exploration of the <strong>KOG</strong> brand —
-    its own color, type system, and visual mood. Click any card to open the live site.
+    The <strong>live sites</strong> people use, the <strong>design directions</strong> for the KOG brand,
+    and every page the team's advisors have <strong>made in Slack</strong>.
   </p>
-  <div class="stat-row">
-    <div class="stat"><span class="n">08</span><span class="l">Sites live</span></div>
-    <div class="stat"><span class="n">08</span><span class="l">Design directions</span></div>
-    <div class="stat"><span class="n">∞</span><span class="l">More coming</span></div>
-  </div>
+  <div class="stat-row" id="stats"></div>
 </header>
 
 <main>
-  <div class="grid" id="site-grid">
-
-    <a class="card" style="--card-accent:#F2B4D1" href="sites/come-gather/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#F2B4D1</span>
-        <img src="assets/screenshots/come-gather.jpg" alt="Screenshot of the Come Gather site hero: 'MAKE ROOM KINGDOM.' over a photo of friends on a hillside" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Come Gather</h2><span class="tagline">Hot&#8209;Pink Editorial</span></div>
-        <p class="desc">A full-bleed editorial scroll built on oversized condensed type, bold pink-and-black contrast, and a floating navigation rail — a communal, art-forward invitation into ordinary faith.</p>
-        <p class="inspiration"><b>Inspiration</b>Recreated from a supplied screenshot of a pale-pink loading screen (a centered “85%” readout), then extended into a fashion-magazine-paced site with street-poster energy.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">Bebas Neue / DM Sans</span>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" style="--card-accent:#2457F5" href="sites/faith-circle/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#2457F5</span>
-        <img src="assets/screenshots/faith-circle.jpg" alt="Screenshot of the Faith Circle site hero: 'A different kind of kingdom is already here.' over a photo of friends by the sea" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Faith Circle</h2><span class="tagline">Sacred Modernism</span></div>
-        <p class="desc">A warm, photographic landing page — oversized serif headlines, a modular process section, and a cobalt route-line motif guiding visitors toward a next faithful step.</p>
-        <p class="inspiration"><b>Inspiration</b>Benchmarked against a referenced editorial landing page's exact rhythm — photographic hero, utility nav, process section, closing CTA — reinterpreted with KOG's own content and a bone-and-cobalt palette.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">Cormorant Garamond / DM Sans</span>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" style="--card-accent:#F0C873" href="sites/open-me/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#F0C873</span>
-        <img src="assets/screenshots/open-me.jpg" alt="Screenshot of the Open Me site: 'HOW OPEN ARE YOU?' poster headline on a violet field with a peeking mascot" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Open Me</h2><span class="tagline">Retro Poster Age&#8209;Gate</span></div>
-        <p class="desc">A single bold poster composition — an oversized wheat-yellow headline and a peeking mascot breaking the seam — that treats the whole viewport as one playful, comic-inspired print.</p>
-        <p class="inspiration"><b>Inspiration</b>A faithful recreation of a supplied “Flying Papers” age-gate screenshot, translated through 1970s comic-book display type and screen-printed color.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">Retro display / grotesk</span>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" style="--card-accent:#F55EAB" href="sites/pink/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#F55EAB</span>
-        <img src="assets/screenshots/pink.jpg" alt="Screenshot of the Pink site: 'The kingdom is already here.' beside an abstract glowing crowned figure on a raspberry gradient" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Pink</h2><span class="tagline">Devotional Preloader</span></div>
-        <p class="desc">A quiet, single-color digital threshold — a raspberry field, a breathing crown mark, and a whisper-thin progress readout — before resolving into a full character-led title state.</p>
-        <p class="inspiration"><b>Inspiration</b>A screenshot-faithful recreation of a hot-pink preloader reference, built out into a full experience with a ceremonial, minimal tone.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">Geometric sans</span>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" style="--card-accent:#C8FF2E" href="sites/studio-1/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#C8FF2E</span>
-        <img src="assets/screenshots/studio-1.jpg" alt="Screenshot of the Studio One site: 'MAKE ROOM FOR WHAT MOVES.' in bone-white and chartreuse type on black" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Studio One</h2><span class="tagline">Sacred Modernism — Dark</span></div>
-        <p class="desc">A black editorial canvas with oversized bone-white type, a single acid-chartreuse spark, and scroll-led reveals of sculptural relic imagery — flame, stone, halo, folded fabric.</p>
-        <p class="inspiration"><b>Inspiration</b>Benchmarked against a black-canvas creative-studio reference site — fixed nav, oversized type, sculptural imagery — reframed through Swiss editorial restraint meeting spiritual symbolism.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">Bebas Neue / Space Grotesk</span>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" style="--card-accent:#d6ff38" href="sites/studio-2/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#D6FF38</span>
-        <img src="assets/screenshots/studio-2.jpg" alt="Screenshot of the Studio Two site: 'MAKE ROOM FOR MORE.' over a crumpled foil smiley-face sculpture" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Studio Two</h2><span class="tagline">Surreal Devotional Studio</span></div>
-        <p class="desc">A long-scroll studio narrative on a near-black canvas — asymmetric editorial layout, surreal tactile imagery, and a lime halo mark — framing faith as a living, expansive world.</p>
-        <p class="inspiration"><b>Inspiration</b>Directly modeled on a "Nothin'"-style reference site's sparse fixed nav, oversized compressed type, and scroll-based discovery, reinterpreted as a spiritual creative studio.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">Bebas Neue / DM Mono</span>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" style="--card-accent:#F0442E" href="sites/becoming/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#F0442E</span>
-        <img src="assets/screenshots/becoming.jpg" alt="Screenshot of the Becoming site: 'We are building one.' in black and vermilion type on a chalk-white field" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Becoming</h2><span class="tagline">Cinematic Editorial</span></div>
-        <p class="desc">A filmstrip-paced scroll of enormous type and disciplined white space, punctuated by a vermilion sun-door mark and a thin vertical progress rail — belief staged like a film title sequence.</p>
-        <p class="inspiration"><b>Inspiration</b>Modeled on the scale contrast and purposeful asymmetry of contemporary architecture journals, built as "Cinematic Editorial / Sacred Modernism" for KOG.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">Space Grotesk / DM Sans</span>
-        </div>
-      </div>
-    </a>
-
-    <a class="card" style="--card-accent:#43646B" href="sites/becoming-awake/" target="_blank" rel="noopener">
-      <div class="thumb-wrap">
-        <span class="swatch-tag"><span class="swatch-dot"></span>#43646B</span>
-        <img src="assets/screenshots/becoming-awake.jpg" alt="Screenshot of the Becoming Awake site: 'The Kingdom is closer than we think.' over a photo of hands writing at a table" loading="lazy" />
-      </div>
-      <div class="card-body">
-        <div class="card-title-row"><h2>Becoming Awake</h2><span class="tagline">Sanctuary Editorial</span></div>
-        <p class="desc">A spacious, photo-led editorial field — full-bleed community imagery, left-anchored essay blocks, and a rising-sun arc mark — treating faith as an everyday, communal presence rather than a distant ideal.</p>
-        <p class="inspiration"><b>Inspiration</b>Modeled on the restraint of independent culture journals and high-end editorial catalogues, reinterpreted as "Sanctuary Editorial" for a faith-centered gathering place.</p>
-        <div class="card-footer">
-          <span class="visit">Visit site <span class="arrow">→</span></span>
-          <span class="fonts-used">DM Serif Display / Manrope</span>
-        </div>
-      </div>
-    </a>
-
+  <div class="tools" role="search">
+    <input id="q" type="search" placeholder="Search every site…" aria-label="Search every site" />
+    <button class="chip" data-show="all" aria-pressed="true">All</button>
+    <button class="chip" data-show="live" aria-pressed="false">Live sites</button>
+    <button class="chip" data-show="design" aria-pressed="false">Design</button>
+    <button class="chip" data-show="made" aria-pressed="false">Made in Slack</button>
   </div>
+
+  <section class="block" id="live">
+    <div class="block-head"><h3>Live sites</h3><p>The real sites, with who can see them and where the code lives.</p></div>
+    <div class="live" id="live-grid"></div>
+  </section>
+
+  <section class="block" id="design">
+    <div class="block-head"><h3>Design directions</h3><p>Independent explorations of the KOG brand, each with its own colour, type and mood.</p></div>
+    <div class="grid" id="design-grid"></div>
+  </section>
+
+  <section class="block" id="made">
+    <div class="block-head"><h3>Made in Slack</h3><p>Pages the advisors built and published from Slack conversations: drafts, prototypes and one-offs.</p></div>
+    <div id="made-groups"></div>
+  </section>
+
+  <p class="empty" id="none" hidden>No sites match that search.</p>
+  <noscript><p class="empty">This page needs JavaScript. The full list is in <a href="sites.json">sites.json</a>.</p></noscript>
 </main>
 
 <footer>
-  <p><strong>About this index.</strong> These are independent design directions for the Kingdom of God (KOG) brand, each built as its own standalone site and gathered here for easy browsing and comparison. New explorations are added as they're finished.</p>
+  <p><strong>About this index.</strong> Every entry comes from one file, <a href="sites.json">sites.json</a>; adding a site means adding one line there. The source is at <a href="https://github.com/the-kingdom-of-god/website-wiki">github.com/the-kingdom-of-god/website-wiki</a>.</p>
 </footer>
 
+<script>
+(function () {
+  var ACCESS = {
+    public: "Public",
+    partly: "Public, login for more",
+    login: "Team login",
+    offline: "Not online yet"
+  };
+
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    for (var k in attrs || {}) {
+      if (k === "text") n.textContent = attrs[k];
+      else if (k === "style") n.style.cssText = attrs[k];
+      else n.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) n.appendChild(c); });
+    return n;
+  }
+  function host(url) {
+    if (!url) return "";
+    if (!/^https?:/.test(url)) return location.host + "/" + url;
+    var u = new URL(url);
+    return (u.host + u.pathname).replace(/\/$/, "").replace(/^www\./, "");
+  }
+  function link(url, cls, kids) {
+    var a = el(url ? "a" : "div", { class: cls }, kids);
+    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+    return a;
+  }
+
+  function liveTile(s) {
+    var t = link(s.url, "tile" + (s.url ? "" : " offline"), [
+      el("span", { class: "badge " + s.access, text: ACCESS[s.access] }),
+      el("h4", { text: s.name }),
+      el("p", { text: s.desc }),
+      el("div", { class: "meta" }, [
+        el("span", { text: s.url ? host(s.url) : "local only" }),
+        s.repo ? el("span", { text: s.repo.replace("the-kingdom-of-god/", "repo: ") }) : null
+      ])
+    ]);
+    t.dataset.search = [s.name, s.desc, s.url, s.repo].join(" ").toLowerCase();
+    return t;
+  }
+
+  function designCard(s) {
+    var c = link(s.url, "card", [
+      el("div", { class: "thumb-wrap" }, [
+        el("span", { class: "swatch-tag" }, [el("span", { class: "swatch-dot" }), document.createTextNode(s.accent.toUpperCase())]),
+        el("img", { src: s.image, alt: "Screenshot of the " + s.name + " site", loading: "lazy" })
+      ]),
+      el("div", { class: "card-body" }, [
+        el("div", { class: "card-title-row" }, [el("h2", { text: s.name }), el("span", { class: "tagline", text: s.tagline })]),
+        el("p", { class: "desc", text: s.desc }),
+        el("div", { class: "card-footer" }, [el("span", { class: "visit" }, [document.createTextNode("Visit site "), el("span", { class: "arrow", text: "→" })])])
+      ])
+    ]);
+    c.style.setProperty("--card-accent", s.accent);
+    c.dataset.search = [s.name, s.tagline, s.desc].join(" ").toLowerCase();
+    return c;
+  }
+
+  function madeGroups(items) {
+    var wrap = document.getElementById("made-groups");
+    var groups = {};
+    items.forEach(function (m) { (groups[m.group] = groups[m.group] || []).push(m); });
+    Object.keys(groups).forEach(function (g) {
+      var ul = el("ul", { class: "list" });
+      groups[g].forEach(function (m) {
+        var li = el("li", {}, [link(m.url, "", [document.createTextNode(m.name)])]);
+        li.dataset.search = (m.name + " " + g).toLowerCase();
+        ul.appendChild(li);
+      });
+      wrap.appendChild(el("div", { class: "group" }, [
+        el("h5", {}, [document.createTextNode(g + " "), el("span", { text: "· " + groups[g].length })]),
+        ul
+      ]));
+    });
+  }
+
+  function stat(n, label) {
+    return el("div", { class: "stat" }, [
+      el("span", { class: "n", text: String(n).padStart(2, "0") }),
+      el("span", { class: "l", text: label })
+    ]);
+  }
+
+  var show = "all";
+  function apply() {
+    var q = document.getElementById("q").value.trim().toLowerCase();
+    var any = false;
+    ["live", "design", "made"].forEach(function (id) {
+      var sec = document.getElementById(id);
+      var hits = 0;
+      sec.querySelectorAll("[data-search]").forEach(function (n) {
+        var ok = !q || n.dataset.search.indexOf(q) !== -1;
+        n.hidden = !ok;
+        if (ok) hits++;
+      });
+      sec.querySelectorAll(".group").forEach(function (g) {
+        g.hidden = !g.querySelector("li:not([hidden])");
+      });
+      sec.hidden = (show !== "all" && show !== id) || hits === 0;
+      if (!sec.hidden) any = true;
+    });
+    document.getElementById("none").hidden = any;
+  }
+
+  fetch("sites.json").then(function (r) { return r.json(); }).then(function (d) {
+    var lg = document.getElementById("live-grid");
+    d.live.forEach(function (s) { lg.appendChild(liveTile(s)); });
+    var dg = document.getElementById("design-grid");
+    d.design.forEach(function (s) { dg.appendChild(designCard(s)); });
+    madeGroups(d.made_in_slack);
+
+    var online = d.live.filter(function (s) { return s.url; }).length;
+    var st = document.getElementById("stats");
+    st.appendChild(stat(online, "Live sites"));
+    st.appendChild(stat(d.design.length, "Design directions"));
+    st.appendChild(stat(d.made_in_slack.length, "Made in Slack"));
+    apply();
+  });
+
+  document.getElementById("q").addEventListener("input", apply);
+  document.querySelectorAll(".chip").forEach(function (b) {
+    b.addEventListener("click", function () {
+      show = b.dataset.show;
+      document.querySelectorAll(".chip").forEach(function (c) { c.setAttribute("aria-pressed", c === b ? "true" : "false"); });
+      apply();
+    });
+  });
+})();
+</script>
 </body>
 </html>

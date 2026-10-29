@@ -1,8 +1,9 @@
 # KOG Hub
 
-The overarching site that lists and links to every KOG site in this repo.
+The overarching site that lists and links to every KOG site: live sites, design directions, and pages the advisors made in Slack.
 
-- `index.html` — the gallery page (cards with description, inspiration, screenshot, and a link to each live site).
+- `sites.json` — the list of every site. `index.html` reads it and builds the page, so this is the only file to edit when a site is added.
+- `index.html` — the page itself (layout, search and filters).
 - `assets/screenshots/` — one preview image per site.
 - `sites/<name>/` — each site's **production build**, copied in from `<project>/dist/public` after a `vite build`. This folder is generated — don't hand-edit it.
 
@@ -31,10 +32,11 @@ Then open the printed localhost URL.
    ```
 3. Take a screenshot of the running site (1440-wide is a good width) and save it as
    `kog-hub/assets/screenshots/<new-site>.jpg`.
-4. Copy one of the existing `<a class="card">` blocks in `index.html`, update the title,
-   tagline, description, inspiration note, fonts, accent color (`--card-accent`), swatch hex label,
-   image src/alt, and the `href="sites/<new-site>/"` link.
-5. Bump the "Sites live" / "Design directions" counters near the top of the page.
+4. Add an entry to the `design` list in `sites.json` (name, url, image, accent, tagline, desc).
+
+For a live site that isn't a design direction, add an entry to `live` instead
+(name, url, desc, repo, and access: `public`, `partly`, `login` or `offline`).
+The counters at the top update themselves.
 
 ## Note on `kog-studio-1` and `kog-studio-2` artwork
 
