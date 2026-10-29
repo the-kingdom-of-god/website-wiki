@@ -196,6 +196,43 @@
    "desc": "A spacious, photo-led editorial field with community imagery and a rising-sun arc, treating faith as an everyday, communal presence."
   }
  ],
+ "manus": [
+  {
+   "name": "KOG Festival — 31 October",
+   "url": "https://kogfest-qszrlekk.manus.space/",
+   "image": "assets/screenshots/manus/kogfest-qszrlekk.jpg",
+   "desc": "The Halloween festival and PubBank soft launch: one night starting at St John's and opening into London.",
+   "shared": "2026-10-07"
+  },
+  {
+   "name": "Reformation Party — Marble Arch",
+   "url": "https://reformsite-qyqlryrn.manus.space/",
+   "image": "assets/screenshots/manus/reformsite-qyqlryrn.jpg",
+   "desc": "The VIP event page for the Q-Park Marble Arch venue, by Speakers' Corner.",
+   "shared": "2026-10-09"
+  },
+  {
+   "name": "Reformation Party — A Vision for Change",
+   "url": "https://reformkog-sdgcvely.manus.space/",
+   "image": "assets/screenshots/manus/reformkog-sdgcvely.jpg",
+   "desc": "The Reformation Party event site, with room for the short film.",
+   "shared": "2026-10-09"
+  },
+  {
+   "name": "Halloween After Hours",
+   "url": "https://spooksite-cxr7qkid.manus.space/",
+   "image": "assets/screenshots/manus/spooksite-cxr7qkid.jpg",
+   "desc": "The Witching Window invitation, and the first clue of the Easter egg hunt.",
+   "shared": "2026-10-09"
+  },
+  {
+   "name": "A field note for Vulcan Gas Company",
+   "url": "https://kogvulcan-njudppeb.manus.space/",
+   "image": "assets/screenshots/manus/kogvulcan-njudppeb.jpg",
+   "desc": "A KOG introduction written for the Vulcan Gas Company.",
+   "shared": "2026-09-18"
+  }
+ ],
  "made_in_slack": [
   {
    "name": "BaaS Partner Decision Matrix",

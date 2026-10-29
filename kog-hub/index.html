@@ -323,7 +323,7 @@
   <h1>Every KOG site,<br/>in one place.</h1>
   <p class="lede">
     The <strong>live sites</strong> people use, the <strong>design directions</strong> for the KOG brand,
-    and every page the team's advisors have <strong>made in Slack</strong>.
+    the sites built <strong>with Manus</strong>, and every page the team's advisors have <strong>made in Slack</strong>.
   </p>
   <div class="stat-row" id="stats"></div>
 </header>
@@ -334,6 +334,7 @@
     <button class="chip" data-show="all" aria-pressed="true">All</button>
     <button class="chip" data-show="live" aria-pressed="false">Live sites</button>
     <button class="chip" data-show="design" aria-pressed="false">Design</button>
+    <button class="chip" data-show="manus" aria-pressed="false">Manus</button>
     <button class="chip" data-show="made" aria-pressed="false">Made in Slack</button>
   </div>
 
@@ -345,6 +346,11 @@
   <section class="block" id="design">
     <div class="block-head"><h3>Design directions</h3><p>Independent explorations of the KOG brand, each with its own colour, type and mood.</p></div>
     <div class="grid" id="design-grid"></div>
+  </section>
+
+  <section class="block" id="manus">
+    <div class="block-head"><h3>Made with Manus</h3><p>Sites Manus built for the team and hosts on its own servers.</p></div>
+    <div class="live" id="manus-grid"></div>
   </section>
 
   <section class="block" id="made">
@@ -413,6 +419,19 @@
     return t;
   }
 
+  function manusTile(s) {
+    var t = link(s.url, "tile", [
+      shot(s),
+      el("div", { class: "tile-body" }, [
+        el("h4", { text: s.name }),
+        el("p", { text: s.desc }),
+        el("div", { class: "meta" }, [el("span", { text: host(s.url) })])
+      ])
+    ]);
+    t.dataset.search = [s.name, s.desc, s.url, "manus"].join(" ").toLowerCase();
+    return t;
+  }
+
   function designCard(s) {
     var c = link(s.url, "card", [
       el("div", { class: "thumb-wrap" }, [
@@ -459,7 +478,7 @@
   function apply() {
     var q = document.getElementById("q").value.trim().toLowerCase();
     var any = false;
-    ["live", "design", "made"].forEach(function (id) {
+    ["live", "design", "manus", "made"].forEach(function (id) {
       var sec = document.getElementById(id);
       var hits = 0;
       sec.querySelectorAll("[data-search]").forEach(function (n) {
@@ -481,12 +500,15 @@
     d.live.forEach(function (s) { lg.appendChild(liveTile(s)); });
     var dg = document.getElementById("design-grid");
     d.design.forEach(function (s) { dg.appendChild(designCard(s)); });
+    var mg = document.getElementById("manus-grid");
+    d.manus.forEach(function (s) { mg.appendChild(manusTile(s)); });
     madeGroups(d.made_in_slack);
 
     var online = d.live.filter(function (s) { return s.url; }).length;
     var st = document.getElementById("stats");
     st.appendChild(stat(online, "Live sites"));
     st.appendChild(stat(d.design.length, "Design directions"));
+    st.appendChild(stat(d.manus.length, "Made with Manus"));
     st.appendChild(stat(d.made_in_slack.length, "Made in Slack"));
     apply();
   });
