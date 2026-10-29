@@ -110,11 +110,16 @@ Both hosts publish the `hub/` folder.
 
 ```sh
 npx surge hub kog-project-overview.surge.sh   # 🌊 surge mirror
-vercel --prod                                 # ▲ kogwebsite.wiki (Vercel project kog-website-wiki)
+cd hub && vercel --prod                       # ▲ kogwebsite.wiki (Vercel project kog-website-wiki)
 ```
 
-▲ The repo root is linked to the Vercel project `kog-website-wiki`, and that project's
-**Root Directory** setting needs to be `hub`.
+▲ Always run `vercel` from **inside `hub/`**. That folder is linked to the Vercel project
+`kog-website-wiki` (in `hub/.vercel/`), and the CLI uploads only the folder you run it from. The
+project's **Root Directory** setting is `./`, meaning "the root of what was uploaded", which is
+`hub/`. Leave it as `./`. 👍
+
+🚫 Don't run `vercel` from the repo root. That would upload the whole repo, and the site would have
+no `index.html` at its root.
 
 ---
 
