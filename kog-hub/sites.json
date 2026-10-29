@@ -231,6 +231,83 @@
    "image": "assets/screenshots/manus/kogvulcan-njudppeb.jpg",
    "desc": "A KOG introduction written for the Vulcan Gas Company.",
    "shared": "2026-09-18"
+  },
+  {
+   "name": "Biscuits & Tea Delights",
+   "url": "https://kog-biscuits-delight.surge.sh/",
+   "image": "assets/screenshots/manus/kog-biscuits-delight.jpg",
+   "desc": "Hand-crafted biscuits for the tea break, with a \"Pick Your Poison\" biscuit quiz.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "Kingdom of God — The Good News",
+   "url": "https://kog-kingdom-app.surge.sh/",
+   "image": "assets/screenshots/manus/kog-kingdom-app.jpg",
+   "desc": "An installable app version of the good news: radical love, joy and purpose.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "Welcome to the Kingdom",
+   "url": "https://kog-kingdom-of-god.surge.sh/",
+   "image": "assets/screenshots/manus/kog-kingdom-of-god.jpg",
+   "desc": "What the Kingdom is, the parables, entering it and living in it.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "KOG Event Hosts",
+   "url": "https://kog-event-hosts.surge.sh/",
+   "image": "assets/screenshots/manus/kog-event-hosts.jpg",
+   "desc": "Recruiting event hosts for KOG soirées. Adults 18+ only.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "Common Ground",
+   "url": "https://kog-common-ground.surge.sh/",
+   "image": "assets/screenshots/manus/kog-common-ground.jpg",
+   "desc": "An anonymous-friendly space for hot takes and late-night theories, with a charter and a mirror room.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "Nitro Archiv",
+   "url": "https://kog-nitro-archiv.surge.sh/",
+   "image": "assets/screenshots/manus/kog-nitro-archiv.jpg",
+   "desc": "Nitrous oxide through history: Davy, Coleridge, Priestley and William James.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "PubBank — Event in Formation",
+   "url": "https://kog-pubbank.surge.sh/",
+   "image": "assets/screenshots/manus/kog-pubbank.jpg",
+   "desc": "PubBank as a corporate-cultural event: the note, the ledger and the signal.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "Reformation Parties — A Signal to Gather",
+   "url": "https://kog-reformation-parties.surge.sh/",
+   "image": "assets/screenshots/manus/kog-reformation-parties.jpg",
+   "desc": "The 31 October invitation: \"Meet us where the light is.\"",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "The Nature of Religious Experience",
+   "url": "https://kog-religious-experience.surge.sh/",
+   "image": "assets/screenshots/manus/kog-religious-experience.jpg",
+   "desc": "Conversion, mysticism, prayer and the neuroscience of the sacred, with infographics.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "I Love My Computer",
+   "url": "https://kog-retro-computer.surge.sh/",
+   "image": "assets/screenshots/manus/kog-retro-computer.jpg",
+   "desc": "A retro desktop with a terminal, a library of classic books, music and IRC.",
+   "shared": "2026-10-29"
+  },
+  {
+   "name": "KOG — A Kingdom. Not a Label.",
+   "url": "https://kog-usa-pipes.surge.sh/",
+   "image": "assets/screenshots/manus/kog-usa-pipes.jpg",
+   "desc": "Faith, culture and Kingdom: music, a shop and contact for KOG.",
+   "shared": "2026-10-29"
   }
  ],
  "made_in_slack": [
