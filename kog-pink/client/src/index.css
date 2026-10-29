@@ -45,13 +45,8 @@ button { font:inherit; }
 .kog-character-shadow { position:absolute; bottom:14%; left:50%; width:260px; height:45px; border-radius:50%; background:rgba(120,5,70,.18); filter:blur(18px); transform:translateX(-50%); }
 .kog-character { position:absolute; top:50%; left:50%; width:230px; height:560px; filter:drop-shadow(18px 26px 18px rgba(118,8,72,.22)); transform:translate(-50%,-45%); transition:transform 700ms var(--ease); }
 .kog-character-stage:hover .kog-character { transform:translate(-50%,-48%) rotate(2deg); }
-.kog-head { position:absolute; top:45px; left:50%; width:132px; height:155px; border-radius:48% 48% 45% 45%; background:linear-gradient(130deg,#9a5748 0%,#6e342e 50%,#3b1a20 100%); box-shadow:inset -18px -10px 24px rgba(39,10,23,.3),inset 15px 14px 22px rgba(255,178,151,.24); transform:translateX(-50%); }
-.kog-hair { position:absolute; top:-23px; left:4px; width:126px; height:65px; border-radius:52% 50% 34% 28%; background:linear-gradient(120deg,#fff7f8,#b7aab5 48%,#776878); clip-path:polygon(0 35%,15% 0,31% 21%,47% 0,61% 20%,77% 0,100% 33%,91% 85%,70% 65%,49% 91%,24% 67%,5% 95%); }
-.kog-face { position:absolute; inset:0; }
-.kog-eye { position:absolute; top:77px; width:7px; height:3px; border-radius:50%; background:#2b1119; }
-.kog-eye.left { left:37px; }.kog-eye.right { right:37px; }
-.kog-mouth { position:absolute; top:112px; left:50%; width:18px; height:6px; border-bottom:1px solid rgba(35,10,18,.7); border-radius:50%; transform:translateX(-50%); }
-.kog-neck { position:absolute; top:184px; left:50%; width:52px; height:62px; background:linear-gradient(90deg,#522522,#a96855,#3d171b); transform:translateX(-50%); }
+.kog-head { position:absolute; top:45px; left:50%; width:132px; height:155px; border-radius:50%; background:radial-gradient(circle at 38% 34%,#fff 0%,#ffe6f2 32%,#ffb3d6 68%,#f77dba 100%); box-shadow:0 0 60px rgba(255,236,246,.55),inset -16px -12px 26px rgba(214,60,140,.22),inset 14px 12px 22px rgba(255,255,255,.6); transform:translateX(-50%); }
+.kog-neck { position:absolute; top:184px; left:50%; width:44px; height:62px; background:linear-gradient(90deg,#f9b9d8,#fff2f8,#f3a6cc); transform:translateX(-50%); }
 .kog-robe { position:absolute; top:216px; left:50%; width:206px; height:330px; clip-path:polygon(28% 0,72% 0,100% 100%,0 100%); background:linear-gradient(110deg,#fff8fc 0%,#e6d5df 42%,#fff 59%,#9c8797 100%); transform:translateX(-50%); box-shadow:inset -20px 0 22px rgba(82,38,62,.12); }
 .kog-collar { position:absolute; top:0; left:50%; width:79px; height:88px; border-right:2px solid rgba(215,182,203,.7); border-left:2px solid rgba(215,182,203,.7); background:linear-gradient(90deg,transparent 43%,rgba(255,255,255,.9) 44% 56%,transparent 57%); transform:translateX(-50%); }
 .kog-seam { position:absolute; top:31px; left:50%; width:1px; height:257px; background:rgba(121,72,103,.28); transform:translateX(-50%); }

@@ -56,12 +56,12 @@ export default function Home() {
             <p className="kog-hero-intro">An original digital world for becoming more awake, more generous, and more fully yourself.</p>
             <a className="kog-pill" href="#becoming">Discover the signal <span>↓</span></a>
           </div>
-          <div className="kog-character-stage" aria-label="Original KOG character illustration" role="img">
+          <div className="kog-character-stage" aria-label="Abstract glowing crowned figure" role="img">
             <div className="kog-halo" />
             <div className="kog-character-shadow" />
             <div className="kog-character">
               <div className="kog-crown-3d"><i /><i /><i /></div>
-              <div className="kog-head"><div className="kog-hair" /><div className="kog-face"><span className="kog-eye left" /><span className="kog-eye right" /><span className="kog-mouth" /></div></div>
+              <div className="kog-head" />
               <div className="kog-neck" />
               <div className="kog-robe"><span className="kog-collar" /><span className="kog-seam" /><span className="kog-emblem">⌁</span></div>
               <div className="kog-arm left" /><div className="kog-arm right" />
